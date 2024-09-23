@@ -14,7 +14,7 @@ app.use("/api/post",productRoute)
 
 
 
-mongoose.connect("mongodb+srv://rkavipriyan11:3OAMSwaTtxlLeSes@heucomundo.zub7a.mongodb.net/?retryWrites=true&w=majority&appName=HeucoMundo")
+mongoose.connect(MONGO_API_KEY)
   .then(() => {  console.log('Connected!');
     app.listen(3000,()=>{
      console.log("Server online")
