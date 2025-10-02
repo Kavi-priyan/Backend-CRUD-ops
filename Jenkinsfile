@@ -21,7 +21,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'npm test || echo "No tests found"'
+                bat 'npm run test || echo "No tests found"'
             }
         }
 
